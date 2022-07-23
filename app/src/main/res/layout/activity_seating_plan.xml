@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_medium_2">
+
+
+                <FrameLayout
+                    android:id="@+id/btnBack"
+                    android:layout_width="@dimen/margin_xlarge"
+                    android:layout_height="@dimen/margin_xlarge"
+                    android:elevation="@dimen/margin_medium">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_baseline_chevron_left_black_24dp" />
+
+                </FrameLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvMovieName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btnBack"
+                    android:layout_centerInParent="true"
+                    android:text="Detective Pikachu"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_heading_1x"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvCinimaName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvMovieName"
+                    android:layout_centerInParent="true"
+                    android:text="Galaxy Cinema - Golden City"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textSize="@dimen/text_regular_2x"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvMovieDateAndTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvCinimaName"
+                    android:layout_centerInParent="true"
+                    android:text="Wednesday, 10 May, 07:00 PM"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_regular_2x" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvSeatingPlan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/tvMovieDateAndTime"
+                    android:layout_marginTop="@dimen/margin_medium_2"
+                    android:layout_marginBottom="@dimen/margin_medium_2" />
+
+                <LinearLayout
+                    android:id="@+id/llColorExplaination"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rvSeatingPlan"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/margin_medium_2"
+                        android:layout_height="@dimen/margin_medium_2"
+                        android:background="@drawable/background_circle"
+                        android:backgroundTint="@color/movie_seat_avaiable_color" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_medium"
+                        android:text="@string/lbl_available" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/margin_medium_2"
+                        android:layout_height="@dimen/margin_medium_2"
+                        android:layout_marginStart="@dimen/margin_medium_2"
+                        android:background="@drawable/background_circle"
+                        android:backgroundTint="@color/moviea_seat_taken_color" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_medium"
+                        android:text="@string/lbl_reserved" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/margin_medium_2"
+                        android:layout_height="@dimen/margin_medium_2"
+                        android:layout_marginStart="@dimen/margin_medium_2"
+                        android:background="@drawable/background_circle"
+                        android:backgroundTint="@color/colorAccent" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_medium"
+                        android:text="@string/lbl_your_selection" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/flDotted"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/llColorExplaination">
+
+                    <View
+                        android:id="@+id/viewDotted"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_small"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/dotted_view"
+                        android:layerType="software" />
+
+                </FrameLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTicketLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/flDotted"
+                    android:layout_marginStart="@dimen/margin_small"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:text="@string/lbl_tickets"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textSize="@dimen/text_regular_2x" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTicket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/flDotted"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/margin_small"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:layout_marginEnd="@dimen/margin_medium_2"
+                    android:text="2"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_regular_2x" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvSeatLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvTicketLabel"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:text="@string/lbl_seats"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textSize="@dimen/text_regular_2x" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvSeat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvTicket"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/margin_medium_2"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:layout_marginEnd="@dimen/margin_medium_2"
+                    android:text="D Row/ 5,6"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_regular_2x" />
+
+
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginEnd="@dimen/margin_medium_2">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnBuyTicket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/get_started_button_background"
+                android:text="Buy Ticket for $20"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

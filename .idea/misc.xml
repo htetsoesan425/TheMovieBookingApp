@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/drawable-v24/background_combo_plus.xml" value="0.139" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/drawable-v24/combo_quantity_view.xml" value="0.139" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/drawable/background_circle.xml" value="0.1485" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/drawable/background_movie_seat_avaiable.xml" value="0.101" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/drawable/background_movie_seat_taken.xml" value="0.101" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/drawable/background_movie_time.xml" value="0.1395" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/drawable/cast_round_view.xml" value="0.105" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/drawable/combo_minus_view.xml" value="0.1365" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/drawable/detail_round_view.xml" value="0.105" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/drawable/dotted_view.xml" value="0.1485" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/drawable/entry_type_button.xml" value="0.131" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/drawable/entry_type_button_background.xml" value="0.149" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/drawable/get_started_button_background.xml" value="0.1475" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/drawable/ic_baseline_chevron_left_white_24dp.xml" value="0.1225" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/drawable/ic_baseline_credit_card_gray_24dp.xml" value="0.1485" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/drawable/ic_baseline_play_arrow_white_24dp.xml" value="0.1395" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/drawable/play_button_background.xml" value="0.143" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/drawable/rounded_backgroun.xml" value="0.149" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/drawable/rounded_background.xml" value="0.1365" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/layout/activity_add_new_card.xml" value="0.18153846153846154" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/layout/activity_login.xml" value="0.184375" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/layout/activity_movie_detail.xml" value="0.12" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/layout/activity_movie_time.xml" value="0.13333333333333333" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/layout/activity_payment_detail.xml" value="0.184375" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/layout/activity_payment_method.xml" value="0.22" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/layout/activity_seating_plan.xml" value="0.184375" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/layout/activity_sign_in_login.xml" value="0.22" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/layout/activity_snack.xml" value="0.184375" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/layout/activity_voucher.xml" value="0.22" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/layout/activity_welcome.xml" value="0.16666666666666666" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/layout/fragment_login.xml" value="0.16666666666666666" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/layout/fragment_sign_up.xml" value="0.16666666666666666" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/layout/sign_in_login_type_view_pod.xml" value="0.22" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/layout/view_holder_carousel.xml" value="0.18333333333333332" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/layout/view_holder_cast.xml" value="0.4466666666666667" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/layout/view_holder_combo_set.xml" value="0.3333333333333333" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/layout/view_holder_date.xml" value="0.22" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/layout/view_holder_empty_carousel.xml" value="0.184375" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/layout/view_holder_genre_chip.xml" value="0.184375" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/layout/view_holder_movie_list.xml" value="0.22" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/layout/view_holder_movie_seat.xml" value="0.184375" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/layout/view_holder_movie_time.xml" value="0.22" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/layout/view_holder_movie_time_list.xml" value="0.184375" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/layout/view_holder_payment_method.xml" value="0.15128205128205127" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/layout/view_pod_movie_list.xml" value="0.22" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/layout/view_pod_navigation_view.xml" value="0.184375" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/layout/view_pod_sign_in_login.xml" value="0.184375" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/layout/view_pod_ticket_fold.xml" value="0.3333333333333333" />
+        <entry key="..\:/Android_Development/Android_Course/PADC FTC/Module10TheMovieBookingApp/TheMovieBooking/app/src/main/res/menu/menu_search.xml" value="0.18333333333333332" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

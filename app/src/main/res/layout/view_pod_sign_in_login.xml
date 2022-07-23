@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.padc.kotlin.ftc.themoviebooking.viewpods.SignInLoginViewPod xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/entry_type_button_background"
+        android:drawableStart="@drawable/facebook_logo"
+        android:paddingStart="@dimen/margin_large"
+        android:paddingEnd="@dimen/margin_large"
+        android:text="@string/lbl_sign_in_with_facebook" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:background="@drawable/entry_type_button_background"
+        android:drawableStart="@drawable/google_logo"
+        android:paddingStart="@dimen/margin_large"
+        android:paddingEnd="@dimen/margin_large"
+        android:text="@string/lbl_sign_in_with_google" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:background="@drawable/get_started_button_background"
+        android:backgroundTintMode="@color/colorAccent"
+        android:paddingStart="@dimen/margin_medium_2"
+        android:text="@string/lbl_confirm"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+</com.padc.kotlin.ftc.themoviebooking.viewpods.SignInLoginViewPod>

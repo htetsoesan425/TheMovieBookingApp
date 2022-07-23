@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_movie_time"
+    android:orientation="horizontal"
+    android:layout_margin="@dimen/margin_medium">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9:30"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_regular_1x" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" AM"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_regular" />
+
+</LinearLayout>

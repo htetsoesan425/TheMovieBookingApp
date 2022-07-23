@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/width_carousel_view"
+    android:layout_height="@dimen/height_carousel_view"
+    android:background="@drawable/get_started_button_background"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivVisa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_card"
+        android:layout_marginEnd="@dimen/margin_start_card"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        app:srcCompat="@drawable/visa_32px" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivThreeDots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/ivVisa"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/margin_start_card"
+        android:layout_marginEnd="@dimen/margin_start_card"
+        android:layout_marginBottom="@dimen/margin_start_card"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        app:srcCompat="@drawable/more_24px" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv4stars1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivVisa"
+        android:layout_alignStart="@id/ivVisa"
+        android:layout_marginTop="@dimen/margin_medium_3"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:gravity="center"
+        android:text="* * * *"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_regular_2x"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv4stars2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivVisa"
+        android:layout_alignParentTop="@id/tv4stars1"
+        android:layout_marginTop="@dimen/margin_medium_3"
+        android:layout_toEndOf="@id/tv4stars1"
+        android:gravity="center"
+        android:text="* * * *"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_regular_2x"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv4stars3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivVisa"
+        android:layout_alignTop="@id/tv4stars1"
+        android:layout_marginStart="@dimen/margin_start_card"
+        android:layout_toEndOf="@id/tv4stars2"
+        android:gravity="center"
+        android:text="* * * *"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_regular_2x"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv4stars4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivVisa"
+        android:layout_marginStart="@dimen/margin_start_card"
+        android:layout_marginTop="@dimen/margin_medium_3"
+        android:layout_toEndOf="@id/tv4stars3"
+        android:gravity="center"
+        android:text="8014"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_regular_2x"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCardHolderName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/ivVisa"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:text="Lily Johnson"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/lblCardHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tvCardHolderName"
+        android:layout_alignStart="@id/ivVisa"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:text="@string/lbl_card_holder"
+        android:textAllCaps="true"
+        android:textColor="@color/colorSecondaryText" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvExpireDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tvCardHolderName"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="@dimen/margin_start_card"
+        android:text="08/21"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/lblExpireDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tvCardHolderName"
+        android:layout_alignEnd="@id/tvExpireDate"
+        android:layout_alignBottom="@id/lblCardHolder"
+        android:text="@string/lbl_expires"
+        android:textAllCaps="true"
+        android:textColor="@color/colorSecondaryText" />
+
+</RelativeLayout>

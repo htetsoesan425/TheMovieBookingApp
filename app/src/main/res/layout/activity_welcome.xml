@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".activities.WelcomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--        <androidx.core.widget.NestedScrollView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent">-->
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivSnack"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:padding="@dimen/margin_xlarge"
+            android:src="@drawable/welcome_img" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/lblWelcomeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivSnack"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Welcome!"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_heading_1x" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/lblWelcomeAppLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblWelcomeLabel"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:gravity="center"
+            android:text="Hello! Welcome to Movie Booking App."
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="@dimen/text_regular_2x" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnGetStarted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/margin_medium_3"
+            android:layout_marginEnd="@dimen/margin_medium_3"
+            android:layout_marginBottom="@dimen/margin_medium_3"
+            android:background="@drawable/get_started_button_background"
+            android:text="Get Started"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+        <!-- </androidx.core.widget.NestedScrollView>-->
+
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

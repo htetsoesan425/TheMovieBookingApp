@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.TheMovieBooking" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!-- Secondary brand color. -->
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+    
+    <style name="Theme.TheMovieBooking.TransparentTheme" parent="Theme.TheMovieBooking">
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+
+    <style name="Theme.TheMovieBooking.VoucherTheme" parent="Theme.TheMovieBooking.TransparentTheme">
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:statusBarColor">@color/whiteDark1</item>
+    </style>
+</resources>

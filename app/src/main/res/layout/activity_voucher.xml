@@ -16,12 +16,12 @@
             android:background="@color/whiteDark1">
 
             <FrameLayout
-                android:id="@+id/btnBack"
-                android:layout_width="@dimen/margin_xlarge"
+                android:id="@+id/btnClose"
+	            android:layout_width="@dimen/margin_xlarge"
                 android:layout_height="@dimen/margin_xlarge"
-                android:layout_marginStart="@dimen/margin_medium_2"
-                android:layout_marginTop="@dimen/margin_large"
-                android:elevation="@dimen/margin_medium">
+	            android:layout_marginStart="@dimen/margin_medium_2"
+	            android:layout_marginTop="@dimen/margin_medium_3"
+	            android:elevation="@dimen/margin_medium">
 
                 <androidx.appcompat.widget.AppCompatImageView
                     android:layout_width="wrap_content"
@@ -34,70 +34,70 @@
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvAwesome"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/btnBack"
-                android:layout_centerInParent="true"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/btnClose"
+	            android:layout_centerInParent="true"
                 android:text="Awesome !"
-                android:textColor="@color/black"
-                android:textSize="@dimen/text_heading_2x"
-                android:textStyle="bold" />
+	            android:textColor="@color/black"
+	            android:textSize="@dimen/awesome_text_size"
+	            android:textStyle="bold" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvCinimaName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tvAwesome"
-                android:layout_centerInParent="true"
-                android:text="This is your ticket."
-                android:textColor="@color/colorSecondaryText"
+	            android:layout_centerInParent="true"
+	            android:text="@string/lbl_this_is_your_ticket"
+	            android:textColor="@color/colorSecondaryText"
                 android:textSize="@dimen/text_regular_2x"
                 android:textStyle="bold" />
 
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_below="@id/tvCinimaName"
-                android:layout_marginStart="@dimen/margin_medium_2"
-                android:layout_marginTop="@dimen/margin_medium_2"
-                android:layout_marginEnd="@dimen/margin_medium_2"
-                android:layout_marginBottom="@dimen/margin_medium_2"
-                android:backgroundTint="@color/white"
-                android:elevation="0dp"
-                app:cardCornerRadius="@dimen/margin_medium"
-                app:cardElevation="0dp">
+	        <com.google.android.material.card.MaterialCardView
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_below="@id/tvCinimaName"
+		        android:layout_marginStart="@dimen/margin_medium_3"
+		        android:layout_marginTop="@dimen/margin_medium_2"
+		        android:layout_marginEnd="@dimen/margin_medium_3"
+		        android:layout_marginBottom="@dimen/margin_medium_2"
+		        android:backgroundTint="@color/white"
+		        android:elevation="12dp"
+		        app:cardCornerRadius="@dimen/margin_medium_1"
+		        app:cardElevation="0dp">
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+		        <RelativeLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content">
 
-                    <androidx.appcompat.widget.AppCompatImageView
-                        android:id="@+id/ivMoviePoster"
-                        android:layout_width="match_parent"
-                        android:layout_height="200dp"
+			        <androidx.appcompat.widget.AppCompatImageView
+				        android:id="@+id/ivMoviePoster"
+				        android:layout_width="match_parent"
+				        android:layout_height="200dp"
                         android:scaleType="centerCrop"
                         app:srcCompat="@drawable/pikachu_poster_detail_image" />
 
-                    <androidx.appcompat.widget.AppCompatTextView
-                        android:id="@+id/tvMovieName"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/ivMoviePoster"
-                        android:layout_marginStart="@dimen/margin_medium_2"
-                        android:layout_marginTop="@dimen/margin_medium"
-                        android:text="Detective Pikachu"
-                        android:textColor="@color/black"
-                        android:textSize="@dimen/text_regular_2x" />
+			        <androidx.appcompat.widget.AppCompatTextView
+				        android:id="@+id/tvMovieName"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_below="@id/ivMoviePoster"
+				        android:layout_marginStart="@dimen/margin_medium_2"
+				        android:layout_marginTop="@dimen/margin_medium"
+				        android:text="Detective Pikachu"
+				        android:textColor="@color/black"
+				        android:textSize="@dimen/movie_name_text_size" />
 
-                    <androidx.appcompat.widget.AppCompatTextView
-                        android:id="@+id/tvMovieDuration"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/tvMovieName"
-                        android:layout_marginStart="@dimen/margin_medium_2"
-                        android:layout_marginTop="@dimen/margin_small"
-                        android:text="100m - IMAX"
-                        android:textColor="@color/colorSecondaryText"
-                        android:textSize="@dimen/text_regular" />
+			        <androidx.appcompat.widget.AppCompatTextView
+				        android:id="@+id/tvMovieDuration"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_below="@id/tvMovieName"
+				        android:layout_marginStart="@dimen/margin_medium_2"
+				        android:layout_marginBottom="@dimen/margin_small"
+				        android:text="100m - IMAX"
+				        android:textColor="@color/colorSecondaryText"
+				        android:textSize="@dimen/movie_name_text_size" />
 
                     <include
                         android:id="@+id/roundedView"
@@ -111,7 +111,6 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@id/roundedView">
 
-
                         <androidx.appcompat.widget.AppCompatTextView
                             android:id="@+id/tvBookingNumberLabel"
                             android:layout_width="wrap_content"
@@ -124,46 +123,55 @@
 
                         <androidx.appcompat.widget.AppCompatTextView
                             android:id="@+id/tvBookingNumber"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentEnd="true"
-                            android:layout_marginStart="@dimen/margin_medium_2"
-                            android:layout_marginTop="@dimen/margin_medium"
-                            android:layout_marginEnd="@dimen/margin_medium_2"
-                            android:text="GC123423"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/text_regular_2x" />
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_alignParentEnd="true"
+	                        android:layout_marginStart="@dimen/margin_medium_2"
+	                        android:layout_marginTop="@dimen/margin_medium"
+	                        android:layout_marginEnd="@dimen/margin_medium_2"
+	                        android:text="GC123423"
+	                        android:textColor="@color/black"
+	                        android:textSize="@dimen/text_regular_2x" />
 
-                        <androidx.appcompat.widget.AppCompatTextView
-                            android:id="@+id/tvShowTimeDateLabel"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@id/tvBookingNumberLabel"
-                            android:layout_marginStart="@dimen/margin_medium_2"
-                            android:layout_marginTop="@dimen/margin_medium"
-                            android:text="@string/lbl_show_time_date"
-                            android:textColor="@color/colorSecondaryText"
-                            android:textSize="@dimen/text_regular_2x" />
+	                    <LinearLayout
+		                    android:id="@+id/llBookingNumber"
+		                    android:layout_width="match_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_below="@id/tvBookingNumberLabel"
+		                    android:layout_marginTop="@dimen/margin_medium"
+		                    android:layout_marginEnd="@dimen/margin_medium_2"
+		                    android:orientation="horizontal">
 
-                        <androidx.appcompat.widget.AppCompatTextView
-                            android:id="@+id/tvShowTimeDate"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@id/tvBookingNumber"
-                            android:layout_alignParentEnd="true"
-                            android:layout_marginStart="@dimen/margin_medium_2"
-                            android:layout_marginTop="@dimen/margin_medium"
-                            android:layout_marginEnd="@dimen/margin_medium_2"
-                            android:text="07:00 PM - 10 May"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/text_regular_2x" />
+		                    <androidx.appcompat.widget.AppCompatTextView
+			                    android:id="@+id/tvShowTimeDateLabel"
+
+			                    android:layout_width="0dp"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginStart="@dimen/margin_medium_2"
+
+			                    android:layout_weight="0.5"
+			                    android:text="@string/lbl_show_time_date"
+			                    android:textColor="@color/colorSecondaryText"
+			                    android:textSize="@dimen/text_regular_2x" />
+
+		                    <androidx.appcompat.widget.AppCompatTextView
+			                    android:id="@+id/tvShowTimeDate"
+			                    android:layout_width="0dp"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginStart="@dimen/margin_medium"
+			                    android:layout_weight="0.5"
+			                    android:text="07:00 PM - 10 May"
+			                    android:textAlignment="textEnd"
+			                    android:textColor="@color/black"
+			                    android:textSize="@dimen/text_regular_2x" />
+	                    </LinearLayout>
 
                         <androidx.appcompat.widget.AppCompatTextView
                             android:id="@+id/tvTheaterLabel"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@id/tvShowTimeDateLabel"
-                            android:layout_marginStart="@dimen/margin_medium_2"
+	                        android:layout_height="wrap_content"
+	                        android:layout_below="@id/llBookingNumber"
+	                        android:layout_marginStart="@dimen/margin_medium_2"
                             android:layout_marginTop="@dimen/margin_medium"
                             android:text="@string/lbl_theater"
                             android:textColor="@color/colorSecondaryText"
@@ -172,9 +180,9 @@
                         <androidx.appcompat.widget.AppCompatTextView
                             android:id="@+id/tvTheater"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@id/tvShowTimeDate"
-                            android:layout_alignParentEnd="true"
+	                        android:layout_height="wrap_content"
+	                        android:layout_below="@id/llBookingNumber"
+	                        android:layout_alignParentEnd="true"
                             android:layout_marginStart="@dimen/margin_medium_2"
                             android:layout_marginTop="@dimen/margin_medium"
                             android:layout_marginEnd="@dimen/margin_medium_2"
@@ -278,22 +286,25 @@
                             android:textColor="@color/black"
                             android:textSize="@dimen/text_regular_2x" />
 
-                        <include
-                            android:id="@+id/roundedView1"
-                            layout="@layout/view_pod_ticket_fold"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_below="@id/tvPriceLabel" />
+	                    <include
+		                    android:id="@+id/roundedView1"
+		                    layout="@layout/view_pod_ticket_fold"
+		                    android:layout_width="match_parent"
+		                    android:layout_height="match_parent"
+		                    android:layout_below="@id/tvPriceLabel"
+		                    android:layout_marginTop="@dimen/margin_small" />
 
-                        <androidx.appcompat.widget.AppCompatImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="120dp"
-                            android:layout_below="@id/roundedView1"
-                            android:layout_marginStart="@dimen/margin_medium"
-                            android:layout_marginEnd="@dimen/margin_medium"
-                            android:background="@color/white"
-                            android:scaleType="centerCrop"
-                            app:srcCompat="@drawable/barcode_image_1" />
+	                    <androidx.appcompat.widget.AppCompatImageView
+		                    android:id="@+id/ivBarcode"
+		                    android:layout_width="match_parent"
+		                    android:layout_height="100dp"
+		                    android:layout_below="@id/roundedView1"
+		                    android:layout_marginStart="@dimen/margin_large"
+		                    android:layout_marginTop="@dimen/margin_medium_1"
+		                    android:layout_marginEnd="@dimen/margin_large"
+		                    android:layout_marginBottom="@dimen/margin_medium_3"
+		                    android:background="@color/white"
+		                    android:scaleType="centerCrop" />
 
                     </RelativeLayout>
 

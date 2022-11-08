@@ -9,13 +9,14 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="@dimen/margin_medium">
+        android:layout_margin="@dimen/margin_medium"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginEnd="@dimen/margin_medium">
 
         <FrameLayout
             android:id="@+id/btnBack"
             android:layout_width="@dimen/margin_xlarge"
             android:layout_height="@dimen/margin_xlarge"
-            android:layout_marginTop="@dimen/margin_medium"
             android:elevation="@dimen/margin_medium">
 
             <androidx.appcompat.widget.AppCompatImageView
@@ -38,20 +39,22 @@
             android:textSize="@dimen/text_regular_1x" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/edtCardName"
+            android:id="@+id/tilCardName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/lblCardName"
             android:layout_marginStart="@dimen/margin_medium_2"
             android:layout_marginEnd="@dimen/margin_medium_2"
-            app:boxStrokeColor="@color/black">
+            app:boxStrokeColor="@color/black"
+            app:endIconMode="clear_text">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtCardNumber"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/white"
-                android:inputType="textEmailAddress"
-                android:text="1234.5678.9112.1314"
+                android:ems="16"
+                android:inputType="number"
                 android:textColor="@color/black" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -60,7 +63,7 @@
             android:id="@+id/lblCardHolder"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/edtCardName"
+            android:layout_below="@id/tilCardName"
             android:layout_marginStart="@dimen/margin_medium_2"
             android:layout_marginTop="@dimen/margin_medium_2"
             android:text="@string/lbl_card_holder"
@@ -68,27 +71,28 @@
             android:textSize="@dimen/text_regular_1x" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/edtCardHolder"
+            android:id="@+id/tilCardHolder"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/lblCardHolder"
             android:layout_marginStart="@dimen/margin_medium_2"
             android:layout_marginEnd="@dimen/margin_medium_2"
-            app:boxStrokeColor="@color/black">
+            app:boxStrokeColor="@color/black"
+            app:endIconMode="clear_text">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtCardHolder"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/white"
-                android:inputType="textEmailAddress"
-                android:text="Lili Johnson" />
+                android:inputType="textEmailAddress" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/edtCardHolder"
+            android:layout_below="@id/tilCardHolder"
             android:layout_marginStart="@dimen/margin_medium_2"
             android:layout_marginTop="@dimen/margin_medium_2"
             android:layout_marginEnd="@dimen/margin_medium_2"
@@ -112,17 +116,18 @@
                     android:textSize="@dimen/text_regular_1x" />
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/edtExpirationDate"
+                    android:id="@+id/tilExpirationDate"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:boxStrokeColor="@color/black">
+                    app:boxStrokeColor="@color/black"
+                    app:endIconMode="clear_text">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtExpirationDate"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:backgroundTint="@color/white"
-                        android:inputType="textEmailAddress"
-                        android:text="12/09" />
+                        android:inputType="date" />
 
                 </com.google.android.material.textfield.TextInputLayout>
             </LinearLayout>
@@ -147,17 +152,19 @@
                     android:textSize="@dimen/text_regular_1x" />
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/edtCVC"
+                    android:id="@+id/tilCVC"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:boxStrokeColor="@color/black">
+                    app:boxStrokeColor="@color/black"
+                    app:endIconMode="clear_text">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtCVC"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:backgroundTint="@color/white"
-                        android:inputType="textEmailAddress"
-                        android:text="150" />
+                        android:inputType="number"
+                        android:maxEms="3" />
 
                 </com.google.android.material.textfield.TextInputLayout>
             </LinearLayout>

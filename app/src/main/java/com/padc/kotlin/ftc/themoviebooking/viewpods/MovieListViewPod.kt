@@ -5,7 +5,7 @@ import android.util.AttributeSet
 import android.widget.RelativeLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.padc.kotlin.ftc.themoviebooking.adapters.MovieAdapter
-import com.padc.kotlin.ftc.themoviebooking.delegates.LoginDelegate
+import com.padc.kotlin.ftc.themoviebooking.data.vos.MovieVO
 import com.padc.kotlin.ftc.themoviebooking.delegates.MovieViewHolderDelegate
 import kotlinx.android.synthetic.main.view_pod_movie_list.view.*
 
@@ -19,7 +19,7 @@ class MovieListViewPod @JvmOverloads constructor(
     fun setUpMovieListViewPod(delegate: MovieViewHolderDelegate, title: String) {
         setDelegate(delegate)
         setUpRecyclerView()
-        //lblMovieType.text = title
+        lblMovieType.text = title
     }
 
     private fun setUpRecyclerView() {
@@ -32,6 +32,10 @@ class MovieListViewPod @JvmOverloads constructor(
 
     private fun setDelegate(delegate: MovieViewHolderDelegate) {
         this.mDelegate = delegate
+    }
+
+    fun setNewData(movieList: List<MovieVO>) {
+        mMovieAdapter.setData(movieList)
     }
 
 

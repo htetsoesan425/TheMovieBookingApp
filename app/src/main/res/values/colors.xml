@@ -10,7 +10,7 @@
 
     <color name="colorPrimary">#FFFFFF</color>
     <color name="colorAccent">#623EEA</color>
-    <color name="colorSecondaryText">#CDD1DA</color>
+    <color name="colorSecondaryText">#B2B4BA</color>
 
     <color name="whiteDark1">#f2f2f2</color>
     <color name="whiteDark2">#e6e6e6</color>
@@ -20,4 +20,5 @@
     <color name="color_add_new_card">#07B875</color>
     <color name="movie_seat_avaiable_color">#d1d8ed</color>
     <color name="moviea_seat_taken_color">#8291b2</color>
+	<color name="color_gray">#51D9D9D9</color>
 </resources>

@@ -1,12 +1,12 @@
 import alirezat775.lib.carouselview.CarouselAdapter
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import com.padc.kotlin.ftc.themoviebooking.R
+import com.padc.kotlin.ftc.themoviebooking.data.vos.CardVO
 import com.padc.kotlin.ftc.themoviebooking.models.SampleModel
 import kotlinx.android.synthetic.main.view_holder_carousel.view.*
-import kotlinx.android.synthetic.main.view_holder_empty_carousel.view.*
 
 /**
  * Author:  Alireza Tizfahm Fard
@@ -16,67 +16,37 @@ import kotlinx.android.synthetic.main.view_holder_empty_carousel.view.*
 
 class CardCarouselAdapter : CarouselAdapter() {
 
-    private val EMPTY_ITEM = 0
-    private val NORMAL_ITEM = 1
-
-    private var vh: CarouselViewHolder? = null
-    var onClick: OnClick? = null
-
-    fun setOnClickListener(onClick: OnClick?) {
-        this.onClick = onClick
-    }
-
-    override fun getItemViewType(position: Int): Int {
-        return when (getItems()[position]) {
-            is EmptySampleModel -> EMPTY_ITEM
-            else -> NORMAL_ITEM
-        }
-    }
+    private var mCards: List<CardVO> = listOf()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CarouselViewHolder {
         val inflater = LayoutInflater.from(parent.context)
-        return if (viewType == NORMAL_ITEM) {
-            val v = inflater.inflate(R.layout.view_holder_carousel, parent, false)
-            vh = MyViewHolder(v)
-            vh as MyViewHolder
-        } else {
-            val v = inflater.inflate(R.layout.view_holder_empty_carousel, parent, false)
-            vh = EmptyMyViewHolder(v)
-            vh as EmptyMyViewHolder
-        }
+        val view = inflater.inflate(R.layout.view_holder_carousel, parent, false)
+        return CardCarouselViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: CarouselViewHolder, position: Int) {
-        when (holder) {
-            is MyViewHolder -> {
-                vh = holder
-                val model = getItems()[position] as SampleModel
-                (vh as MyViewHolder).tvExpireDate.text = model.getId().toString()
-            }
-            else -> {
-                vh = holder
-                val model = getItems()[position] as EmptySampleModel
-                (vh as EmptyMyViewHolder).titleEmpty.text = model.getText()
-            }
+        if (mCards.isNotEmpty()) {
+            holder.bindData(mCards[position])
         }
     }
 
-
-    inner class MyViewHolder(itemView: View) : CarouselViewHolder(itemView) {
-
-        var tvExpireDate: TextView = itemView.tvExpireDate
-
-        init {
-            tvExpireDate.setOnClickListener { onClick?.click(getItems()[adapterPosition] as SampleModel) }
-        }
-
+    @SuppressLint("NotifyDataSetChanged")
+    fun setData(cards: List<CardVO>) {
+        mCards = cards
+        notifyDataSetChanged()
     }
 
-    inner class EmptyMyViewHolder(itemView: View) : CarouselViewHolder(itemView) {
-        var titleEmpty: TextView = itemView.item_empty_text
-    }
+    override fun getItemCount(): Int = mCards.count()
+
+    inner class CardCarouselViewHolder(itemView: View) : CarouselViewHolder(itemView)
 
     interface OnClick {
         fun click(model: SampleModel)
     }
+}
+
+private fun CarouselAdapter.CarouselViewHolder.bindData(cardVO: CardVO) {
+    itemView.tv4stars1.text = cardVO.cardNumber
+    itemView.tvCardHolderName.text = cardVO.cardHolder
+    itemView.tvExpireDate.text = cardVO.expirationDate
 }

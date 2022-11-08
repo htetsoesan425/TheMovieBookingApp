@@ -1,17 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.padc.kotlin.ftc.themoviebooking.viewpods.MovieListViewPod xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvMovieList"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_medium"
-        android:clipToPadding="false"
-        android:paddingStart="@dimen/margin_medium_2"
-        android:paddingEnd="@dimen/margin_medium_2"
+	<TextView
+		android:id="@+id/lblMovieType"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/rlProfile"
+		android:layout_marginStart="@dimen/margin_medium_3"
+		android:layout_marginTop="@dimen/margin_medium_2"
+		android:text="Now Showing"
+		android:textColor="@color/black"
+		android:textSize="@dimen/size_movie_label"
+		android:textStyle="bold" />
+
+	<androidx.recyclerview.widget.RecyclerView
+		android:id="@+id/rvMovieList"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/lblMovieType"
+		android:layout_marginTop="@dimen/margin_medium"
+		android:clipToPadding="false"
+		android:paddingStart="@dimen/margin_medium_3"
+		android:paddingEnd="@dimen/margin_medium_2"
         tools:itemCount="1"
         tools:listitem="@layout/view_holder_movie_list" />
 

@@ -1,9 +1,7 @@
 package com.padc.kotlin.ftc.themoviebooking.dummy
 
-import com.padc.kotlin.ftc.themoviebooking.data.vos.*
-
 val dummyEntryTypeList = listOf("Login", "Sign in")
-
+/*
 val DUMMY_SEATS = listOf(
     MovieSeatVO(title = "A", type = SEAT_TYPE_TEXT),
     MovieSeatVO(title = "", type = SEAT_TYPE_EMPTY),
@@ -75,4 +73,4 @@ val DUMMY_SEATS = listOf(
     MovieSeatVO(title = "", type = SEAT_TYPE_AVAIABLE),
     MovieSeatVO(title = "", type = SEAT_TYPE_AVAIABLE),
     MovieSeatVO(title = "G", type = SEAT_TYPE_TEXT)
-)
+)*/

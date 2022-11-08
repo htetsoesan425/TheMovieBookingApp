@@ -2,7 +2,7 @@
     <string name="app_name">TheMovieBooking</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="lbl_login">Login</string>
+    <string name="lbl_login" formatted="true">Login</string>
     <string name="lbl_sign_in">Sign in</string>
     <string name="lbl_forgot_password">Forgot Password ?</string>
     <string name="lbl_email">Email</string>
@@ -40,14 +40,21 @@
     <string name="lbl_payment_amount">Payment Amount</string>
     <string name="lbl_edit">Edit</string>
     <string name="lbl_promotion_code">Promotion Code</string>
-    <string name="lbl_select_a_language">Select A Language</string>
-    <string name="lbl_terms_of_services">Terms of Services</string>
-    <string name="lbl_help">Help</string>
-    <string name="lbl_rate_us">Rate Us</string>
-    <string name="drawer_open">Open</string>
-    <string name="drawer_close">Close</string>
-    <string name="lbl_welcome">Welcome!</string>
-    <string name="lbl_welcome_back_login_to_continue">Welcome back, login to continue</string>
-    <string name="lbl_plot_summary">Plot Summary</string>
-    <string name="lbl_cast">Cast</string>
+	<string name="lbl_select_a_language">Select A Language</string>
+	<string name="lbl_terms_of_services">Terms of Services</string>
+	<string name="lbl_help">Help</string>
+	<string name="lbl_rate_us">Rate Us</string>
+	<string name="drawer_open">Open</string>
+	<string name="drawer_close">Close</string>
+	<string name="lbl_welcome">Welcome!</string>
+	<string name="lbl_welcome_back_login_to_continue">Welcome back, login to continue</string>
+	<string name="lbl_plot_summary">Plot Summary</string>
+	<string name="lbl_cast">Cast</string>
+	<string name="lbl_now_showing">Now Showing</string>
+	<string name="lbl_coming_soon">Coming Soon</string>
+	<string name="lbl_log_out">Log out</string>
+	<string name="lbl_please_choose_movie_time">Please choose movie time!</string>
+	<string name="lbl_choose_a_payment_method">Please choose a payment method!</string>
+	<string name="lbl_this_is_your_ticket">This is your ticket.</string>
+	<string name="btn_next_content">Next</string>
 </resources>

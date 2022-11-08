@@ -12,7 +12,9 @@
         android:drawableStart="@drawable/facebook_logo"
         android:paddingStart="@dimen/margin_large"
         android:paddingEnd="@dimen/margin_large"
-        android:text="@string/lbl_sign_in_with_facebook" />
+        android:text="@string/lbl_sign_in_with_facebook"
+        android:textAllCaps="false"
+        android:textColor="@color/colorSecondaryText" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="match_parent"
@@ -22,7 +24,10 @@
         android:drawableStart="@drawable/google_logo"
         android:paddingStart="@dimen/margin_large"
         android:paddingEnd="@dimen/margin_large"
-        android:text="@string/lbl_sign_in_with_google" />
+        android:text="@string/lbl_sign_in_with_google"
+
+        android:textAllCaps="false"
+        android:textColor="@color/colorSecondaryText" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnConfirm"
@@ -34,6 +39,7 @@
         android:paddingStart="@dimen/margin_medium_2"
         android:text="@string/lbl_confirm"
         android:textAllCaps="false"
-        android:textColor="@color/white" />
+        android:textColor="@color/white"
+        android:textStyle="bold" />
 
 </com.padc.kotlin.ftc.themoviebooking.viewpods.SignInLoginViewPod>

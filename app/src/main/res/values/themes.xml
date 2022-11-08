@@ -8,16 +8,22 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
-    </style>
-    
-    <style name="Theme.TheMovieBooking.TransparentTheme" parent="Theme.TheMovieBooking">
-        <item name="android:fitsSystemWindows">true</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
+        <!--<item name="fontFamily">sans-serif-light</item>-->
     </style>
 
+	<style name="Theme.TheMovieBooking.TransparentTheme" parent="Theme.TheMovieBooking">
+		<item name="android:fitsSystemWindows">true</item>
+		<item name="android:statusBarColor">@android:color/transparent</item>
+	</style>
 
-    <style name="Theme.TheMovieBooking.VoucherTheme" parent="Theme.TheMovieBooking.TransparentTheme">
-        <item name="android:fitsSystemWindows">true</item>
-        <item name="android:statusBarColor">@color/whiteDark1</item>
-    </style>
+
+	<style name="Theme.TheMovieBooking.VoucherTheme" parent="Theme.TheMovieBooking.TransparentTheme">
+		<item name="android:fitsSystemWindows">true</item>
+		<item name="android:statusBarColor">@color/whiteDark1</item>
+	</style>
+
+	<style name="MyCustomTextAppearance" parent="TextAppearance.Design.Tab">
+		<item name="textAllCaps">false</item>
+		<item name="android:textAllCaps">false</item>
+	</style>
 </resources>

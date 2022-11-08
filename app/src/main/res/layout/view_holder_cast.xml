@@ -7,8 +7,8 @@
     android:layout_centerInParent="true">
 
     <com.makeramen.roundedimageview.RoundedImageView
-        android:id="@+id/imageView1"
-        android:layout_width="@dimen/margin_xxlarge"
+        android:id="@+id/ivCast"
+	    android:layout_width="@dimen/margin_xxlarge"
         android:layout_height="@dimen/margin_xxlarge"
         android:scaleType="centerCrop"
         android:src="@drawable/cast_image"

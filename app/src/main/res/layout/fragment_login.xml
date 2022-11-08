@@ -1,96 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_marginTop="@dimen/margin_medium_2">
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_marginTop="@dimen/margin_small"
+	app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
+	<RelativeLayout
+		android:id="@+id/rl_login"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginTop="@dimen/margin_medium_2">
 
-    <androidx.core.widget.NestedScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="@dimen/margin_medium_2">
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/lblEmail"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/lbl_email"
+			android:textColor="#BDC1C8" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/margin_medium_2"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+		<com.google.android.material.textfield.TextInputLayout
+			android:id="@+id/tilLoginEmail"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/lblEmail"
+			android:layout_marginTop="@dimen/margin_medium"
+			app:boxStrokeColor="@color/colorSecondaryText"
+			app:endIconMode="clear_text">
 
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/lblEmail"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/lbl_email"
-                android:textColor="#BDC1C8" />
+			<com.google.android.material.textfield.TextInputEditText
+				android:id="@+id/edtLoginEmail"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:backgroundTint="@color/white"
+				android:inputType="textEmailAddress" />
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/edtCardName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/lblEmail"
-                android:layout_marginTop="@dimen/margin_medium">
+		</com.google.android.material.textfield.TextInputLayout>
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@color/white"
-                    android:hint="example@gmail.com"
-                    android:inputType="textEmailAddress" />
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/lblPassword"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/tilLoginEmail"
+			android:layout_marginTop="@dimen/margin_medium_2"
+			android:text="@string/lbl_password"
+			android:textColor="#BDC1C8" />
 
-            </com.google.android.material.textfield.TextInputLayout>
+		<com.google.android.material.textfield.TextInputLayout
+			android:id="@+id/tilLoginPassword"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/lblPassword"
+			android:layout_marginTop="@dimen/margin_medium"
+			app:boxStrokeColor="@color/colorSecondaryText"
+			app:endIconMode="password_toggle">
 
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/lblPassword"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/edtCardName"
-                android:layout_marginTop="@dimen/margin_medium_2"
-                android:text="@string/lbl_password"
-                android:textColor="#BDC1C8" />
+			<com.google.android.material.textfield.TextInputEditText
+				android:id="@+id/edtLoginPassword"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:backgroundTint="@color/white"
+				android:inputType="textPassword" />
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/edtPassword"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/lblPassword"
-                android:layout_marginTop="@dimen/margin_medium"
-                app:endIconMode="password_toggle">
+		</com.google.android.material.textfield.TextInputLayout>
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@color/white"
-                    android:hint="********"
-                    android:inputType="textPassword" />
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/lblForgetPassword"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/tilLoginPassword"
+			android:layout_alignParentEnd="true"
+			android:layout_marginTop="@dimen/margin_xxlarge"
+			android:layout_marginBottom="@dimen/margin_large"
+			android:text="@string/lbl_forgot_password"
+			android:textColor="@color/colorSecondaryText" />
 
-            </com.google.android.material.textfield.TextInputLayout>
+	</RelativeLayout>
+	<!--</androidx.core.widget.NestedScrollView>-->
 
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/lblForgetPassword"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/edtPassword"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="@dimen/margin_xxlarge"
-                android:layout_marginBottom="@dimen/margin_large"
-                android:text="@string/lbl_forgot_password"
-                android:textColor="@color/colorSecondaryText" />
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/rl_login"
+		android:layout_alignParentBottom="true">
 
-
-        </RelativeLayout>
-    </androidx.core.widget.NestedScrollView>
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true">
-
-        <include
-            android:id="@+id/vpLoginButtons"
-            layout="@layout/view_pod_sign_in_login"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+		<include
+			android:id="@+id/vpLoginButtons"
+			layout="@layout/view_pod_sign_in_login"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent" />
     </FrameLayout>
 
 </RelativeLayout>

@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:gravity="center"
-    android:layout_marginBottom="@dimen/margin_medium_2">
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	android:layout_marginStart="@dimen/margin_medium"
+	android:layout_marginEnd="@dimen/margin_medium"
+	android:layout_marginBottom="@dimen/margin_medium_2">
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tvCinemaName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="GC : Golden City"
-        android:textColor="@color/black"
-        android:textSize="@dimen/text_regular_2x"
-        android:textStyle="bold" />
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/tvCinemaName"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="@color/black"
+		android:textSize="@dimen/text_regular_2x"
+		android:textStyle="bold"
+		tools:text="GC : Golden City" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvMovieTime"

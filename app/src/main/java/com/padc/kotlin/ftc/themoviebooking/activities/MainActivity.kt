@@ -49,6 +49,7 @@ class MainActivity : AppCompatActivity(), MovieViewHolderDelegate {
 
     }
 
+
     private fun setUpClickListener() {
 
         llLogOut.setOnClickListener {
